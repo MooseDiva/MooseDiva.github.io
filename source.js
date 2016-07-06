@@ -58,17 +58,19 @@ var turns = 0;
               console.log("");
               turns = 2;
               console.log('Turns = ' + turns);
-              console.log("You open the time capsule. In it, is a note and some coins.")
+              console.log("You open the time capsule. In it, is a note and some coins.");
               answer = prompt("Command").toLowerCase();
               console.log("> " + answer " <");
+              break;
               switch(answer) {
-               case 'read note'
+               case 'read note':
                console.log("");
                turns = 3;
                console.log('Turns = ' + turns);
                console.log("The note reads in crude handwriting: Hello, to my future self. How is things? The demon still lurks around under the well, doesn't it? If it ever gets me, I'll be ready.");
                answer= prompt("Command").toLowerCase();
                console.log("> " + answer " <");
+               break;
               }
             }
             break;
