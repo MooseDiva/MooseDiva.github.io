@@ -60,7 +60,7 @@ var turns = 0;
               console.log('Turns = ' + turns);
               console.log("You open the time capsule. In it, is a note and some coins.");
               answer = prompt("Command").toLowerCase();
-              console.log("> " + answer " <");
+              console.log("> " + answer + " <");
               break;
               switch(answer) {
                case 'read note':
@@ -69,7 +69,7 @@ var turns = 0;
                console.log('Turns = ' + turns);
                console.log("The note reads in crude handwriting: Hello, to my future self. How is things? The demon still lurks around under the well, doesn't it? If it ever gets me, I'll be ready.");
                answer= prompt("Command").toLowerCase();
-               console.log("> " + answer " <");
+               console.log("> " + answer + " <");
                break;
               }
             }
