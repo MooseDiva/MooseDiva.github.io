@@ -9,6 +9,8 @@ var turns = 0;
      answer = prompt("Command").toLowerCase();
      console.log("");
      console.log("> " + answer + " <");
+} else {
+     console.log("Why not a yes? Exactly a yes...");
 }
      
      switch(answer) { //this switch is the *almost* ENTIRE game //
@@ -18,6 +20,7 @@ var turns = 0;
              console.log("'Mairo' is a text-based game using prompt to use commands. List of commands:");
              console.log("");
              console.log("Left, right, up, down || Used to move about the world.");
+             console.log("Open (object) || Used to, obviously, open things such as doors, chests, and more.")
              console.log("");
              answer = prompt("Command").toLowerCase();
              console.log("> " + answer + " <");
@@ -29,6 +32,19 @@ var turns = 0;
             console.log("There is nothing but trees. FOREST.");
             answer = prompt("Command").toLowerCase();
      console.log("> " + answer + " <");
+           switch(answer) {
+            case "help":
+           turns = 1;
+             console.log("");
+             console.log("'Mairo' is a text-based game using prompt to use commands. List of commands:");
+             console.log("");
+             console.log("Left, right, up, down || Used to move about the world.");
+             console.log("Open (object) || Used to, obviously, open things such as doors, chests, and more.")
+             console.log("");
+             answer = prompt("Command").toLowerCase();
+             console.log("> " + answer + " <");
+             break;
+           }
             break;
         case 'right':
             turns = 1;
@@ -46,6 +62,14 @@ var turns = 0;
             answer = prompt("Command").toLowerCase()
             console.log("> " + answer + " <");
             break;
+            case 'down':
+             turns = 1;
+             console.log('Turns = ' + turns);
+             console.log("");
+             console.log("You only see tree after tree after tree. FOREST.");
+             answer = prompt("Command").toLowerCase()
+             console.log("> " + answer + " <")
+             break;
         default:
         turns = 1;
         console.log('Turns = ' + turns);
