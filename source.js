@@ -1,4 +1,4 @@
-console.log("Hello");
+Testing
 var answer = prompt("Welcome to Mairo, a text-based game. Would you like to play?").toLowerCase();
 var turns = 0;
  if(answer === 'yes') {
@@ -34,7 +34,8 @@ var turns = 0;
      console.log("> " + answer + " <");
            switch(answer) {
             case "help":
-           turns = 1;
+           turns = 2;
+           console.log("Turns = " + turns);
              console.log("");
              console.log("'Mairo' is a text-based game using prompt to use commands. List of commands:");
              console.log("");
@@ -53,6 +54,13 @@ var turns = 0;
             console.log("You are in a clearing with a lockbox, labeled 'Time Capsule', and a forest to your right.");
             answer = prompt("Command").toLowerCase()
             console.log("> " + answer + " <");
+            switch(answer){
+             case 'open time capsule':
+              turns = 2;
+              console.log('Turns = ' + turns);
+              console.log("You open the time capsule. In it, is a note and some coins.")
+              
+            }
             break;
          case 'up':
             turns = 1;
