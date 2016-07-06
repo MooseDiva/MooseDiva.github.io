@@ -60,7 +60,7 @@ var turns = 0;
               console.log('Turns = ' + turns);
               console.log("You open the time capsule. In it, is a note and some coins.");
               answer = prompt("Command").toLowerCase();
-              console.log("> " + answer " <");
+              console.log("> " + answer + " <");
               switch(answer) {
                case 'read note':
                console.log("");
