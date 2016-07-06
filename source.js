@@ -1,3 +1,4 @@
+console.log("Hello");
 var answer = prompt("Welcome to Mairo, a text-based game. Would you like to play?").toLowerCase();
 var turns = 0;
  if(answer === 'yes') {
