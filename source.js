@@ -90,6 +90,13 @@ var turns = 0;
              console.log("You only see tree after tree after tree. FOREST.");
              answer = prompt("Command").toLowerCase()
              console.log("> " + answer + " <")
+             switch(answer) {
+              case 'open door':
+              turns = 2;
+              console.log('Turns = ' + turns);
+              console.log("");
+              console.log("")
+             }
              break;
         default:
         turns = 1;
