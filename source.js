@@ -36,6 +36,16 @@ var turns = 0;
             console.log("");
             console.log("You are in a clearing with a lockbox, labeled 'Time Capsule', and a forest to your right.");
             answer = prompt("Command").toLowerCase()
+            console.log("> " + answer + " <");
+            break;
+         case 'up':
+            turns = 1;
+            console.log('Turns = ' + turns);
+            console.log("");
+            console.log("You find yourself in a beach. An endless ocean is to your left, along with a door you can make ajar.");
+            answer = prompt("Command").toLowerCase()
+            console.log("> " + answer + " <");
+            break;
         default:
         turns = 1;
         console.log('Turns = ' + turns);
