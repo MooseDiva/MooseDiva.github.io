@@ -82,6 +82,14 @@ var turns = 0;
             console.log("You find yourself in a beach. An endless ocean is to your left, along with a door you can make ajar.");
             answer = prompt("Command").toLowerCase()
             console.log("> " + answer + " <");
+            switch(answer) {
+             case 'open door' :
+              console.log("");
+              console.log("Ask you walk closer to the door, you realize it's actually a coffin of a little girl. It brings back memories of seeing your own daughter as a toddler take her last breath years ago, begging for you, her father, to save her, which you failed... It fills you with sorrow.");
+              answer = prompt("Command").toLowerCase();
+              console.log("> " + answer + " <");
+              break;
+            }
             break;
             case 'down':
              turns = 1;
