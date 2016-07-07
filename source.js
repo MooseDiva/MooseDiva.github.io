@@ -20,15 +20,23 @@ var turns = 0;
              console.log("");
              console.log("Left, right, up, down || Used to move about the world.");
              console.log("Open (object) || Used to, obviously, open things such as doors, chests, and more.")
+             console.log("Rage || Used to make your character rage. Useful for raging situations, and wasting a turn.")
              console.log("");
              answer = prompt("Command").toLowerCase();
              console.log("> " + answer + " <");
+             switch(answer) {
+              case 'left':
+               turns = 2;
+               console.log('Turns = ' + turns);
+               console.log("You can't go this way. It's blocked by oceans of trees.");
+               
+             }
              break;
         case 'left':
             turns = 1;
             console.log('Turns = ' + turns);
             console.log("");
-            console.log("There is nothing but trees. FOREST.");
+            console.log("You can't go this way. It's blocked by oceans of trees.");
             answer = prompt("Command").toLowerCase();
      console.log("> " + answer + " <");
            switch(answer) {
@@ -114,5 +122,4 @@ var turns = 0;
         answer = prompt("Command").toLowerCase();
      console.log("> " + answer + " <");
         break;
-
 } 
