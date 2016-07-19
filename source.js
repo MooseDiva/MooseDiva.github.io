@@ -26,10 +26,29 @@ var turns = 0;
              console.log("> " + answer + " <");
              switch(answer) {
               case 'left':
+               
                turns = 2;
+               console.log("");
                console.log('Turns = ' + turns);
                console.log("You can't go this way. It's blocked by oceans of trees.");
-               
+               break;
+               case 'right':
+                turns = 2;
+                console.log("");
+                console.log('Turns = ' + turns);
+                console.log("");
+                console.log("You are in a clearing with a lockbox, labeled 'Time Capsule', and a forest to your right.");
+                answer = prompt("Command").toLowerCase();
+                console.log("> " + answer + " <");
+               break;
+               console.log("");
+               case 'rage':
+                turns = 2;
+                console.log("");
+                console.log("You rage. Good for you. You wasted a turn.");
+                answer = prompt('Command').toLowerCase();
+                console.log("> " + answer + " <");
+                break;
              }
              break;
         case 'left':
