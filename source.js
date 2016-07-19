@@ -45,6 +45,8 @@ var turns = 0;
                case 'rage':
                 turns = 2;
                 console.log("");
+                console.log("Turns = 2");
+                console.log("");
                 console.log("You rage. Good for you. You wasted a turn.");
                 answer = prompt('Command').toLowerCase();
                 console.log("> " + answer + " <");
