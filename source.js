@@ -61,7 +61,7 @@ var turns = 0;
             console.log('Turns = ' + turns);
             console.log("");
             console.log("You can't go this way. It's blocked by oceans of trees.");
-            answer = prompt("Command").toLowerCase();
+            answer = prompt("Command").toLowerCase()
      console.log("> " + answer + " <");
            switch(answer) {
             case "help":
@@ -75,6 +75,31 @@ var turns = 0;
              console.log("");
              answer = prompt("Command").toLowerCase();
              console.log("> " + answer + " <");
+             switch(answer) {
+              case 'right':
+               turns = 3;
+            console.log('Turns = ' + turns);
+            console.log("");
+            console.log("You are in a clearing with a lockbox, labeled 'Time Capsule', and a forest to your right.");
+            answer = prompt("Command").toLowerCase()
+            console.log("> " + answer + " <");
+            switch(answer) {
+             case 'open time capsule':
+              console.log("");
+              turns = 3;
+              console.log('Turns = ' + turns);
+              console.log("You open the time capsule. In it, is a note and some coins.");
+              answer = prompt("Command").toLowerCase();
+              console.log("> " + answer + " <");
+              switch(answer) {
+                case = 'read note'
+                turns = 4;
+                console.log("Turns = " + turns);
+                console.log('The note reads in crude handwriting: Hello, to my future self. How are things? The demon still lurks around under the well, doesn't it? If it ever gets me, I'll be ready.");
+                answer.prompt("Command").toLowerCase()
+                console.log("> " = answer + " <");
+                
+                
              break;
            }
             break;
@@ -101,7 +126,6 @@ var turns = 0;
                console.log("The note reads in crude handwriting: Hello, to my future self. How are things? The demon still lurks around under the well, doesn't it? If it ever gets me, I'll be ready.");
                answer= prompt("Command").toLowerCase();
                console.log("> " + answer + " <");
-               
                break;
               }
               break;
