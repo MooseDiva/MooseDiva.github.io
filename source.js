@@ -92,7 +92,7 @@ var turns = 0;
               answer = prompt("Command").toLowerCase();
               console.log("> " + answer + " <");
               switch(answer) {
-                case = 'read note'
+                case 'read note'
                 turns = 4;
                 console.log("Turns = " + turns);
                 console.log('The note reads in crude handwriting: Hello, to my future self. How are things? The demon still lurks around under the well, doesn't it? If it ever gets me, I'll be ready.");
